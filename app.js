@@ -17,6 +17,7 @@ var mongoose = require('mongoose');
 var config = require('./config/globalVars');
 mongoose.connect(config.db);
 
+
 // passport configuration for authentication
 var passport = require('passport');
 var session = require('express-session');
