@@ -26,6 +26,12 @@ var localStrategy = require('passport-local').Strategy;
 // enable the app to use these passport classes
 app.use(flash());
 
+
+// cookieParser before session string 
+
+app.use(express.cookieParser('your secret here'));
+app.use(express.session());
+
 // configure sessions
 app.use(session( {
   secret: config.secret,
