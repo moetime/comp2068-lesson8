@@ -27,10 +27,6 @@ var localStrategy = require('passport-local').Strategy;
 app.use(flash());
 
 
-// cookieParser before session string 
-
-app.use(express.cookieParser('your secret here'));
-app.use(express.session());
 
 // configure sessions
 app.use(session( {
