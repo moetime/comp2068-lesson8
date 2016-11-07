@@ -28,12 +28,13 @@ app.use(flash());
 
 
 
+
 // configure sessions
-//app.use(session( {
-//  secret: config.secret,
-//  resave: true,
-//  saveUninitialized: false
-// }));
+app.use(session( {
+  secret: turtle,
+  resave: true,
+  saveUninitialized: false
+}));
 
 app.use(passport.initialize());
 app.use(passport.session());
