@@ -6,7 +6,7 @@
 
 module.exports = {
 
- db: 'mongodb://mytest.canadaeast.cloudapp.azure.com',
+ db: 'mongodb://mytest.canadaeast.cloudapp.azure.com/mytestdb',
  secret: 'Use this to create Salt 123'
 
  };
