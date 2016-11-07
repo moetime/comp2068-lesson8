@@ -30,7 +30,7 @@ app.use(flash());
 
 
 // configure sessions
-app.use(express.session( {
+app.use(session( {
   secret: "girl",
   resave: true,
   saveUninitialized: false
