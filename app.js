@@ -30,7 +30,7 @@ app.use(flash());
 
 
 // configure sessions
-app.use(session( {
+app.use(express.session( {
   secret: 'turtle',
   resave: true,
   saveUninitialized: false
