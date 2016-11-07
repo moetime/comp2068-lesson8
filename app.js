@@ -16,6 +16,7 @@ var app = express();
 var mongoose = require('mongoose');
 var config = require('./config/globalVars');
 mongoose.connect(config.db);
+var mongo = require('mongodb');
 
 // passport configuration for authentication
 var passport = require('passport');
@@ -29,12 +30,12 @@ app.use(flash());
 
 
 
-// configure sessions
-//app.use(session( {
- // secret: "girl",
- // resave: true,
- // saveUninitialized: false
-// }));
+ // configure sessions
+app.use(session( {
+ secret: config.secret,
+ resave: true,
+ saveUninitialized: false
+ }));
 
 app.use(passport.initialize());
 app.use(passport.session());
