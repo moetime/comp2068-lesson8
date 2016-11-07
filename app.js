@@ -31,7 +31,7 @@ app.use(flash());
 
 // configure sessions
 app.use(session( {
-  secret: turtle,
+  secret: 'turtle',
   resave: true,
   saveUninitialized: false
 }));
