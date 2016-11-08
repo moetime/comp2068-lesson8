@@ -20,5 +20,9 @@
     "passport-local-mongoose": "^4.0.0",
     "serve-favicon": "~2.3.0",
     "typings": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-plugin-react": "^6.6.0"
   }
 }
