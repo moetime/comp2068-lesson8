@@ -4,7 +4,7 @@ var plm = require('passport-local-mongoose');
 var accountSchema = new mongoose.Schema({
 
 
-})
+});
 
 accountSchema.plugin(plm);
 
